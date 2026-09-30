@@ -5,7 +5,7 @@
  */
 const CONFIG = {
   // 👉 PUT YOUR GOOGLE DRIVE, DROPBOX, WETRANSFER, OR ONEDRIVE LINK HERE:
-  downloadUrl: "https://drive.google.com/drive/folders/YOUR_CLOUD_FOLDER_ID",
+  downloadUrl: "https://we.tl/t-9rzzCPY1Q1szowVw",
 
   // Image files in current folder
   images: [
