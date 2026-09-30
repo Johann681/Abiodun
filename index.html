@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deliverables | ABIODUN</title>
+  <meta name="description" content="Exclusive Photography & Videography Delivery Suite" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ambient Violet Velvet Background Orbs -->
+  <div class="purple-mesh-bg" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Minimalist Luxury Header -->
+  <header class="header">
+    <a href="#" class="brand">ABIODUN<span class="dot">.</span></a>
+    <a href="#get-it-all" class="header-cta">
+      <i class="fa-solid fa-cloud-arrow-down"></i>
+      <span>Get Master Files</span>
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="floating-hero">
+    <div class="hero-text-content">
+      <div class="badge">
+        <i class="fa-solid fa-sparkles"></i> Exclusive Delivery Suite
+      </div>
+      <h1 class="hero-title">Visuals in Motion</h1>
+      <p class="subtitle">Curated moments captured in full-frame detail &bull; Scroll to experience</p>
+    </div>
+
+    <!-- Infinite Floating Stream -->
+    <div class="floating-stage" id="floating-stage">
+      <div class="floating-track" id="floating-track-1"></div>
+      <div class="floating-track reverse" id="floating-track-2"></div>
+    </div>
+
+    <div class="scroll-prompt">
+      <a href="#scroll-gallery">
+        <span class="scroll-label">Explore Gallery</span>
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Scroll Gallery Section -->
+  <section id="scroll-gallery" class="popup-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Gallery Preview</span>
+        <h2 class="section-heading">Featured Highlights</h2>
+        <p class="section-sub">A curated selection from your master collection</p>
+      </div>
+
+      <div class="popup-grid" id="popup-grid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Master Delivery Section -->
+  <section id="get-it-all" class="get-all-section">
+    <div class="get-all-container">
+      <div class="massive-glow-text" aria-hidden="true">GET IT ALL</div>
+
+      <div class="delivery-box">
+        <div class="box-header-icon">
+          <i class="fa-solid fa-box-archive"></i>
+        </div>
+        <h3 class="delivery-title">Your Complete Master Files</h3>
+        <p class="delivery-desc">
+          Instant access to all uncompressed RAW stills, 4K color-graded master reels, and high-bitrate deliverables stored in your private cloud.
+        </p>
+
+        <!-- Copy Link Input -->
+        <div class="copy-field-wrap">
+          <div class="input-container">
+            <i class="fa-solid fa-link link-ico"></i>
+            <input
+              type="text"
+              id="download-link-input"
+              class="link-input"
+              readonly
+              value="https://drive.google.com/drive/folders/YOUR_CLOUD_FOLDER_ID"
+            />
+          </div>
+          <button class="btn-copy" id="btn-copy">
+            <i class="fa-regular fa-copy"></i>
+            <span id="btn-copy-text">Copy Link</span>
+          </button>
+        </div>
+
+        <!-- Direct Action Link -->
+        <div class="direct-btn-wrap">
+          <a href="https://drive.google.com/drive/folders/YOUR_CLOUD_FOLDER_ID" id="direct-link-btn" target="_blank" rel="noopener noreferrer" class="btn-direct">
+            <span>Open Google Drive Directory</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-bg" id="lightbox-bg"></div>
+    <div class="lightbox-body">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close Preview">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img src="" alt="Expanded View" id="lightbox-image" />
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Link copied to clipboard! Ready to paste.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
